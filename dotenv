@@ -1,27 +1,28 @@
 ### Required by scalelite-api
-# SECRET_KEY_BASE=
-# LOADBALANCER_SECRET=
+ SECRET_KEY_BASE=acaf3927ce980e425ee8957d6423b433410a053102898c572faedc039ad5170391eae0c7d59991624a79c9d1ae9e0320f9882dcd8542d4095a2b4861e997c341
+ LOADBALANCER_SECRET=e4b3731f8d0b98588ab81049ce8079d68a5e432fad002c693095c5eb206cc9c4
 #
 ### Required by scalelite-api and scalelite-poller
-# REDIS_URL=
+ REDIS_URL=redis://username:Entrar955@45.77.254.92:6379
+#
 #
 ### Required by scalelite-api and scalelite-recording-importer
-# DATABASE_URL=
-# SCALELITE_RECORDING_DIR=/mnt/scalelite-recordings/var/bigbluebutton
+ DATABASE_URL=postgres://scaleusr:Entrar@955@45.77.44.177:5432/entrar
+ SCALELITE_RECORDING_DIR=/mnt/scalelite-recordings/var/bigbluebutton
 #
 ### Required by scalelite-nginx (only When using SSL)
-# NGINX_SSL=true
-# SCALELITE_NGINX_EXTRA_OPTS=--mount type=bind,source=/etc/letsencrypt,target=/etc/nginx/ssl,readonly
-# URL_HOST=
+ NGINX_SSL=true
+ SCALELITE_NGINX_EXTRA_OPTS=--mount type=bind,source=/etc/letsencrypt,target=/etc/nginx/ssl,readonly
+ URL_HOST=class.entrarlive.online
 #
 ### Required when when specific repo or version (other than defaults) are needed
-# SCALELITE_REPO=blindsidenetwks
-# SCALELITE_TAG=v1
+ SCALELITE_REPO=blindsidenetwks
+ SCALELITE_TAG=v1
 #
 ### Optional for postgres when using docker-compose
-# POSTGRES_USER=
-# POSTGRES_PASSWORD=
+ POSTGRES_USER=scaleusr
+POSTGRES_PASSWORD=Entrar955
 #
 ### Optional for init-letsencrypt.sh when using certbot for generating signed SSL certificates
-#LETSENCRYPT_EMAIL=
+LETSENCRYPT_EMAIL=afsaredrisy@gmail.com
 #LETSENCRYPT_STAGING=0 # Set to 1 if you're testing your setup to avoid hitting request limits
